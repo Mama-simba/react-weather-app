@@ -1,0 +1,46 @@
+input {
+  font-size: 20px;
+  width: 60%;
+  padding: 10px;
+}
+
+.search-button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  background: linear-gradient(to bottom, #4f333c 0%, #774347 50%, #c87d6c 100%);
+  color: white;
+  text-decoration: none;
+  transition: all 200ms ease;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+}
+
+.search-button:hover {
+  cursor: pointer;
+  background: white;
+  color: #4f333c;
+  border: 1px solid #4f333c;
+}
+
+.search-button i {
+  font-size: 18px;
+}
+
+.location-button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 13px;
+  background: linear-gradient(to bottom, #201d27 0%, #2f3e6a 50%, #5480a9 100%);
+  font-size: 0.9em;
+  color: white;
+  text-decoration: none;
+  transition: all 200ms ease;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+}
+
+.location-button:hover {
+  cursor: pointer;
+  background: white;
+  color: #2f3e6a;
+  border: 1px solid #2f3e6a;
+}
