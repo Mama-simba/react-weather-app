@@ -27,7 +27,7 @@ export default function MainWeatherInfo() {
           <a href="/" className="unit-type" id="celsius">
             °C
           </a>
-          <a className="line text-light">|</a>
+          <span className="line text-light"> | </span>
           <a href="/" className="unit-type" id="fahrenheit">
             °F
           </a>

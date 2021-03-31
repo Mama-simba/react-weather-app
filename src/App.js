@@ -3,7 +3,7 @@ import Form from "./Form";
 import MainWeatherInfo from "./MainWeatherInfo";
 import HourlyForecast from "./HourlyForecast";
 import Footer from "./Footer";
-import axios from "axios";
+
 
 
 import './App.css';
