@@ -24,11 +24,11 @@ export default function MainWeatherInfo() {
           <span className="temperature text-light" id="temp">
             8
           </span>
-          <a href="#" className="unit-type" id="celsius">
+          <a href="/" className="unit-type" id="celsius">
             °C
           </a>
           <a className="line text-light">|</a>
-          <a href="#" className="unit-type" id="fahrenheit">
+          <a href="/" className="unit-type" id="fahrenheit">
             °F
           </a>
           <div className="max-min-temp">
