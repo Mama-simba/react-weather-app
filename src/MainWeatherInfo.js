@@ -1,5 +1,5 @@
 import "./MainWeatherInfo.css";
-
+import axios from "axios";
 
 export default function MainWeatherInfo() {
   return (
