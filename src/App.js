@@ -1,6 +1,6 @@
 import React from "react";
 import Form from "./Form";
-import MainWeatherInfo from "./MainWeatherInfo";
+import Weather from "./Weather";
 import HourlyForecast from "./HourlyForecast";
 import Footer from "./Footer";
 
@@ -14,7 +14,7 @@ export default function App() {
       <div className="container">
         <div className="weather-app">
           <Form />
-          <MainWeatherInfo />
+          <Weather />
           <hr />
           <HourlyForecast />
           <hr />

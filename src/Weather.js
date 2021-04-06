@@ -1,9 +1,9 @@
 import React, { useState} from "react";
-import "./MainWeatherInfo.css";
+import "./Weather.css";
 import axios from "axios";
 import FormattedDate from "./FormattedDate";
 
-export default function MainWeatherInfo() {
+export default function Weather() {
   const [ready, setReady] = useState(false);
   const [weatherData, setWeatherData] = useState({});
   function handleResponse(response){
