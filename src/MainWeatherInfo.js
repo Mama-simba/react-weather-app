@@ -1,12 +1,13 @@
 import "./MainWeatherInfo.css";
 
+
 export default function MainWeatherInfo() {
   return (
-    <div className="row">
-      <h1 className="city text-secondary text-center text-light">Berlin</h1>
-      <p className="text-light text-center mb-0" id="date">
+      <div className="MainDetails">
+        <h1 className="city text-secondary text-center text-light">Berlin</h1>
+        <p className="text-light text-center mb-0" id="date">
         Wed, 17 February, 15:30
-      </p>
+        </p>
 
       <div className="main-weather d-flex justify-content-center">
         <div className="left-box text-center">
@@ -54,5 +55,7 @@ export default function MainWeatherInfo() {
         </li>
       </ul>
     </div>
+
+    
   );
 }

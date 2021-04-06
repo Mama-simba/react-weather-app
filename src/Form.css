@@ -1,13 +1,10 @@
-input {
-  font-size: 20px;
-  width: 60%;
-  padding: 10px;
+
+form {
+  width: 100%;
 }
 
 .search-button {
   border: none;
-  border-radius: 10px;
-  padding: 10px 15px;
   background: linear-gradient(to bottom, #4f333c 0%, #774347 50%, #c87d6c 100%);
   color: white;
   text-decoration: none;
@@ -28,10 +25,7 @@ input {
 
 .location-button {
   border: none;
-  border-radius: 10px;
-  padding: 10px 13px;
   background: linear-gradient(to bottom, #201d27 0%, #2f3e6a 50%, #5480a9 100%);
-  font-size: 0.9em;
   color: white;
   text-decoration: none;
   transition: all 200ms ease;
