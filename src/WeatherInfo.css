@@ -4,14 +4,20 @@
 
 .left-box {
   padding-right: 10px;
+  padding-top: 10px;
 }
 .right-box {
   padding-left: 10px;
+  padding-top: 10px;
 }
 
 .icon-today-weather {
-  width: 60px;
-  margin: 10px 10px;
+  width: 80px;
+  margin: 0px 10px;
+}
+
+.weather-description{
+  padding-top: 10px;
 }
 
 .temperature {

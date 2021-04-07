@@ -22,7 +22,7 @@ export default function Weather(props) {
       tempMax: response.data.main.temp_max,
       tempMin: response.data.main.temp_min,
       date: new Date(response.data.dt * 1000),  
-      icon: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" 
+      icon: response.data.weather[0].icon
     });
   }
 

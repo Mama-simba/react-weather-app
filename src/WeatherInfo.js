@@ -1,5 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherIcon from "./WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
 
 import "./WeatherInfo.css"
 
@@ -15,15 +17,13 @@ export default function WeatherInfo(props){
 
           <div className="main-weather d-flex justify-content-center">
             <div className="left-box text-center">
-                <img className="icon-today-weather" id="main-icon" src={props.data.icon} alt={props.data.description}/>
-                <p id="weather-description" className="text-light text-capitalize">{props.data.description}</p>
+                <WeatherIcon code={props.data.icon} className="icon-today-weather"/>
+                <p className="text-light text-capitalize weather-description">{props.data.description}</p>
             </div>
+            
             <div className="right-box text-center">
-               <span className="temperature text-light" id="temp">{Math.round(props.data.temperature)}</span>
-                <a href="/" className="unit-type celsius" id="celsius">°C</a>
-                <span className="line text-light"> | </span>
-                <a href="/" className="unit-type" id="fahrenheit">°F</a>
-                <div className="max-min-temp">
+            <WeatherTemperature celsius={props.data.temperature}/>
+            <div className="max-min-temp">
                     <i className="fas fa-thermometer-three-quarters"></i>
                     <span className="max text-light" id="max-temp"></span>
                     <span className="text-light"> {Math.round(props.data.tempMax)}°C </span>
@@ -31,9 +31,7 @@ export default function WeatherInfo(props){
                     <span className="min text-light" id="min-temp"></span>
                     <span className="text-light"> {Math.round(props.data.tempMin)}°C </span>
                 </div>
-                       
-            </div>
-                    
+            </div>       
           </div>
 
           <ul className="text-center mb-0 px-0">
