@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="text-center">
       <span className="copyright">©️ Coded by Cristina Padilla</span>
-      <a href="https://github.com/Mama-simba/my-weather-app" target="_blank" rel="noreferrer">
+      <a href="https://github.com/Mama-simba/react-weather-app" target="_blank" rel="noreferrer">
         <i className="fab fa-github-square"></i>
       </a>
       <a
