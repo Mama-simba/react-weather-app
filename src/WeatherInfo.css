@@ -1,0 +1,66 @@
+
+
+
+
+.left-box {
+  padding-right: 10px;
+}
+.right-box {
+  padding-left: 10px;
+}
+
+.icon-today-weather {
+  width: 60px;
+  margin: 10px 10px;
+}
+
+.temperature {
+  font-size: 50px;
+}
+
+.unit-type {
+  font-size: 12px;
+  position: relative;
+  bottom: 30px;
+  left: -3px;
+  text-decoration: none;
+  color: #7bcdf9;
+}
+
+.celsius {
+  padding-left: 5px;
+}
+
+.line {
+  font-size: 12px;
+  position: relative;
+  bottom: 30px;
+  left: -3px;
+  text-decoration: none;
+  color: black;
+}
+
+.unit-type:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.max-min-temp {
+  padding-top: 5px;
+}
+
+.fa-thermometer-three-quarters {
+  color: #ef3b44;
+  font-size: 15px;
+}
+
+.fa-thermometer-quarter {
+  color: #7bcdf9;
+  font-size: 15px;
+}
+
+ul {
+  list-style: none;
+  font-size: 14px;
+}
+
