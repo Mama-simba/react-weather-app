@@ -17,7 +17,7 @@ export default function WeatherInfo(props){
 
           <div className="main-weather d-flex justify-content-center">
             <div className="left-box text-center">
-                <WeatherIcon code={props.data.icon} className="icon-today-weather"/>
+                <WeatherIcon code={props.data.icon} size={64} className="icon-today-weather"/>
                 <p className="text-light text-capitalize weather-description">{props.data.description}</p>
             </div>
             

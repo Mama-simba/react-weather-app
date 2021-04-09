@@ -1,6 +1,5 @@
 import React from "react";
 import Weather from "./Weather";
-import HourlyForecast from "./HourlyForecast";
 import Footer from "./Footer";
 
 
@@ -13,9 +12,7 @@ export default function App() {
       <div className="container">
         <div className="weather-app">
           <Weather defaultCity="New York"/>
-          <hr />
-          <HourlyForecast />
-          <hr />
+        
         </div>
       </div>
       <Footer />

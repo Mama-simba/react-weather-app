@@ -44,3 +44,8 @@ form {
 .main-details {
   width: 100%;
 }
+
+hr {
+  background: white;
+  background-image: linear-gradient(to right, #ccc, white, #ccc);
+}

@@ -15,8 +15,5 @@ body {
   background-position: center;
 }
 
-hr {
-  background: white;
-  background-image: linear-gradient(to right, #ccc, white, #ccc);
-}
+
 
