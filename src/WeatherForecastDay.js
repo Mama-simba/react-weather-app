@@ -11,10 +11,20 @@ export default function WeatherForecastDay (props){
         return `${temperature}°`;
     }
 
+    function day (){
+        let date = new Date(props.date.dt * 1000);
+        let day = date.getDay();
+
+        let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+        return days[day];
+
+    }
+
 
     return (
         <div>
-            <p className="text-center text-light date">{props.data.dt}</p>
+            <p className="text-center text-light date">{day()}</p>
             <WeatherIcon code={props.data.weather[0].icon} size="50"/>
             <p className="text-center text-light daily-temp maxTemp">{maxTemperature()}°<span className="minTemp">{minTemperature()}°</span></p>
         </div>
