@@ -10,18 +10,18 @@ export default function Forecast(props) {
 
 
     function handleResponse(response){
-        setForecast(response.data.daily);
+        setForecast(response.data);
         setLoaded(true);
     }
 
    
 
-    if (loaded) {
+    if (loaded && props.coordinates.lat === forecast.lat && props.coordinates.lon === forecast.lon) {
         return (
             <div className="Forecast">
                 <div className="row">
                     <div className="col col-lg-2 col-md-2 col-sm-6 hour-box">
-                        <WeatherForecastDay data={forecast[0]} />
+                        <WeatherForecastDay data={forecast.daily[0]} />
                     </div>
                 </div>
             </div>
