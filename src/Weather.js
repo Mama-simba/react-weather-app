@@ -49,7 +49,7 @@ export default function Weather(props) {
     return (
         <div className="Weather row">
           <form onSubmit={handleSubmit} className="mt-4 mb-3">
-            <div class="input-group">
+            <div className="input-group">
               <input onChange={handleCitySearch} type="text" id="city-input" className="form-control" placeholder="Enter your city"/>
               <button className="btn btn-outline-secondary search-button" type="button"><i className="fas fa-search-location"></i></button>
               <button className="btn btn-outline-secondary location-button" type="button">My location</button>
