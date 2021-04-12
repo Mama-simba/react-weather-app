@@ -23,6 +23,21 @@ export default function Forecast(props) {
                     <div className="col col-lg-2 col-md-2 col-sm-6 hour-box">
                         <WeatherForecastDay data={forecast.daily[0]} />
                     </div>
+                    <div className="col col-lg-2 col-md-2 col-sm-6 hour-box">
+                        <WeatherForecastDay data={forecast.daily[1]} />
+                    </div>
+                    <div className="col col-lg-2 col-md-2 col-sm-6 hour-box">
+                        <WeatherForecastDay data={forecast.daily[2]} />
+                    </div>
+                    <div className="col col-lg-2 col-md-2 col-sm-6 hour-box">
+                        <WeatherForecastDay data={forecast.daily[3]} />
+                    </div>
+                    <div className="col col-lg-2 col-md-2 col-sm-6 hour-box">
+                        <WeatherForecastDay data={forecast.daily[4]} />
+                    </div>
+                    <div className="col col-lg-2 col-md-2 col-sm-6 hour-box">
+                        <WeatherForecastDay data={forecast.daily[5]} />
+                    </div>
                 </div>
             </div>
         );
