@@ -10,6 +10,21 @@ export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ready: false});
   const [city, setCity] = useState(props.defaultCity);
   
+  
+  //Geolocation button
+  function currentLocation(response){
+    let latitude = response.coords.latitude;
+    let longitude = response.coords.longitude;
+    const apiKey = "c16d2b9d485ee204702db359b60158f6";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+
+  function getLocation(event){
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(currentLocation);
+  }
+
 
   function handleResponse(response){
     setWeatherData({
@@ -52,7 +67,7 @@ export default function Weather(props) {
             <div className="input-group">
               <input onChange={handleCitySearch} type="text" id="city-input" className="form-control" placeholder="Enter your city"/>
               <button className="btn btn-outline-secondary search-button" type="button"><i className="fas fa-search-location"></i></button>
-              <button className="btn btn-outline-secondary location-button" type="button">My location</button>
+              <button onClick={getLocation} className="btn btn-outline-secondary location-button" type="button">My location</button>
            </div>
           </form>
           <div className="main-details">
